@@ -1,0 +1,9 @@
+library(plyr)
+mole_data <- read.table("moles_data.txt", sep = "\t", header = TRUE)
+gender_ag = count(mole_data$Mol_gender)
+labels = paste(c("Female (", "Male ("), gender_ag$freq, c(")", ")"), sep = "")
+
+pdf("out.pdf")
+pie(gender_ag$freq, labels, init.angle = 70, 
+    main = "Moles gender", col = c("#ff33e3", "blue"))
+dev.off()

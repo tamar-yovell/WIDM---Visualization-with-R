@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601284399355.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7C02AA3",
+    "lastKnownWriteTime" : 1601279541,
+    "last_content_update" : 1601279541,
+    "path" : "C:/Users/Tamar 2/Dropbox/Personal Project/WIDM - Visualization with R/moles_data.txt",
+    "project_path" : "moles_data.txt",
+    "properties" : {
+        "cursorPosition" : "5,8",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601292795658.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "181383591",
+    "id" : "34470F0C",
+    "lastKnownWriteTime" : 1601292583,
+    "last_content_update" : 1601292583,
+    "path" : "C:/Users/Tamar 2/Dropbox/Personal Project/WIDM - Visualization with R/code.R",
+    "project_path" : "code.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

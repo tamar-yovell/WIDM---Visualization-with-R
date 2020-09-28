@@ -1,0 +1,21 @@
+Season	Mol_name	Mol_gender	Mol_occupation
+1	Deborah	F	huisvrouw
+2	Nico	M	informaticus
+3	George	M	kunstenaar/kok
+4	Elise	F	student
+5	Yvon Jaspers	F	televisiepresentactrice
+6	Milouska Meulens	F	televisiepresentactrice
+7	Inge Ipenburg	F	actrice
+8	Dennis Weening	M	radio presentator
+9	Jon van Eerd	M	acteur
+10	Kim Pieters	F	actrice
+11	Patrick Stoof	M	acteur
+12	Anne-Marie Jung	F	actrice
+13	Kees Tol	M	tv-presentator
+14	Susan Visser	F	actrice
+15	Margriet van der Linden	F	journaliste
+16	Klaas van Kruistum	M	tv-presentator
+17	Thomas Cammaert	M	acteur
+18	Jan Versteegh	M	presentator
+19	Merel Westrik	F	presentator
+20	Rob Dekay	M	musicus
