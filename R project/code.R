@@ -38,3 +38,18 @@ ggplot(df, aes(x = reorder(continent, -frequency), y = frequency, fill = "blue")
   ggtitle("Continents of destination") + theme(plot.title = element_text(hjust=0.5)) +
   theme(legend.position="none")
 ggsave("continents.jpg", width = 6, height = 4)
+
+# ~~~ Web scraping for rating plot ~~~ 
+library(xml2)
+library(rvest)
+full_page = read_html("https://en.wikipedia.org/wiki/Wie_is_de_Mol%3F_(Dutch_TV_series)")
+ratings_table = full_page %>% html_nodes(xpath = "/html/body/div[3]/div[3]/div[5]/div[1]/table[6]") %>% html_table(fill = TRUE)
+data = data.frame(ratings_table)$"Finale..Reunion..1"
+data = data[2:21]
+data = as.numeric(gsub(",", "",data))
+df = data.frame(1:20, data)
+ggplot(df, aes(x = X1.20, y = data)) + geom_point() + 
+  xlab("season") + ylab("Number of Viewers") +
+  scale_y_continuous(labels = scales::comma) + ggtitle("Finale Rating vs. Season") +
+  theme(plot.title = element_text(hjust=0.5))
+ggsave("Rating.jpg", width = 6, height = 4)
