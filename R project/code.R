@@ -28,3 +28,13 @@ ggplot(df, aes(x = x, y = y, color = y)) + geom_point(aes(size = 2)) +
 ggsave("Time-vs-occupation.jpg", width = 10, height = 2)
 
 
+# ~~~ Continent bar chart ~~~ 
+continent = c("South\nAmerica", "Asia", "Europe", "Australia", "North\nAmerica", "Africa")
+frequency = c(6, 6, 4, 2, 2, 1)
+df = data.frame(continent, frequency)
+df = df[order(frequency),]
+ggplot(df, aes(x = reorder(continent, -frequency), y = frequency, fill = "blue")) + 
+  geom_bar(stat="identity") + xlab(NULL) + ylab("Count of seasons") + 
+  ggtitle("Continents of destination") + theme(plot.title = element_text(hjust=0.5)) +
+  theme(legend.position="none")
+ggsave("continents.jpg", width = 6, height = 4)
